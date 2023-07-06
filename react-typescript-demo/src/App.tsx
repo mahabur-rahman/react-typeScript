@@ -6,6 +6,7 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
+import LoggedIn from './components/state/LoggedIn';
 
 function App() {
   const personName = {
@@ -30,7 +31,8 @@ function App() {
     {/* <Oscar>
       <Heading> Oscar goes to leonardo decpario!</Heading>
     </Oscar> */}
-    <Greet name="mahabur"   isLoggedIn={true} />
+    {/* <Greet name="mahabur"   isLoggedIn={true} /> */}
+    <LoggedIn />
     </>
   );
 }
