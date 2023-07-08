@@ -13,6 +13,10 @@ import LoggedIn from './components/state/LoggedIn';
 // import User from './components/state/User';
 import {UserInfo} from './components/context/UserInfo';
 import { UserContextProvider } from './components/context/UserContext';
+import DomRef from './components/refs/DomRef';
+import { MutableRef } from './components/refs/MutableRef';
+import Private from './auth/Private';
+import Profile from './auth/Profile';
 
 function App() {
   const personName = {
@@ -48,10 +52,16 @@ function App() {
       <Box />
     </ThemeContextProvider> */}
 
-<UserContextProvider>
+    {/* <UserContextProvider>
+        <UserInfo />
+    </UserContextProvider> */}
 
-    <UserInfo />
-</UserContextProvider>
+    {/* <DomRef /> */}
+
+{/* <MutableRef /> */}
+    
+
+    <Private isLoggedIn={true} Component={Profile} />
     </>
   );
 }
