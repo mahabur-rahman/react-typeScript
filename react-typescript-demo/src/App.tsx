@@ -20,6 +20,8 @@ import Profile from './auth/Profile';
 import { List } from './generics/List';
 import { RandomNumber } from './restrictions/RandomNumber';
 import { Toast } from './templateLiterals/TemplateLiterals';
+import { Button } from './html/Button';
+import { Input } from './html/Input';
 
 function App() {
   const personName = {
@@ -95,7 +97,14 @@ function App() {
 
       {/* <RandomNumber value={10} isZero /> */}
 
-      <Toast position='center'/>
+      {/* <Toast position='center'/> */}
+
+      {/* <Button variant="primary" onClick={() => console.log('clicked')}>
+      button label
+      </Button> */}
+
+
+      <Input />
     </>
   );
 }
