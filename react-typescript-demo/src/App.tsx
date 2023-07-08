@@ -18,6 +18,7 @@ import { MutableRef } from './components/refs/MutableRef';
 import Private from './auth/Private';
 import Profile from './auth/Profile';
 import { List } from './generics/List';
+import { RandomNumber } from './restrictions/RandomNumber';
 
 function App() {
   const personName = {
@@ -69,7 +70,7 @@ function App() {
 
     {/* <List items={[1, 2, 3]} onClick={item => console.log(item)} /> */}
 
-    <List
+    {/* <List
         items={[
           {
             id: 1,
@@ -88,7 +89,10 @@ function App() {
           }
         ]}
         onClick={item => console.log(item)}
-      />
+      /> */}
+
+
+      <RandomNumber value={10} isZero />
     </>
   );
 }
